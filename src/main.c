@@ -1,17 +1,10 @@
-#include "brickgame/tetris/s21_bricks_logic.h"
-
-typedef struct {
-    int a;
-    int b;
-} test;
+#include "brickgame/tetris/bricks_logic.h"
 
 int main() {
-    test testing;
 
-    testing.a = 1;
-    testing.b = 2;
+  UserAction_t user_action = Start;
 
-    int res = testing.a + testing.b;
+  input_keyboard(&user_action);
 
-    printf("%d\n", res);
+  printf("%c\n", user_action);
 }

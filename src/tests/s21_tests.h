@@ -7,7 +7,7 @@
 
 #define BUFF_SIZE 1000
 
-#include "../brickgame/tetris/s21_bricks_logic.h"
+#include "../brickgame/tetris/bricks_logic.h"
 
 void run_tests(void);
 void run_testcase(Suite *testcase, int counter_testcase);
