@@ -46,6 +46,7 @@ clean:
 		rm -rf *.info
 		rm -rf test
 		rm -rf report/*
+		rm -rf *.out
 
 rebuild: clean s21_bricks
 
