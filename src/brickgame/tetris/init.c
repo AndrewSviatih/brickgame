@@ -1,35 +1,26 @@
 #include "bricks_logic.h"
 
-void input_keyboard(UserAction_t *input_key) {
-  int ch;
+void init_game_field(GameInfo_t *game_info) {
 
-  while (*input_key != Terminate) {
-    ch = getchar();
-    switch (ch) {
-      case 'q':
-        *input_key = Terminate;
-        break;
-      case KEY_LEFT:
-        *input_key = Left;
-        break;
-      case KEY_RIGHT:
-        *input_key = Right;
-        break;
-      case KEY_UP:
-        *input_key = Up;
-        break;
-      case KEY_DOWN:
-        *input_key = Down;
-        break;
-      case 's':
-        *input_key = Start;
-        break;
-      case 'p':
-        *input_key = Pause;
-        break;
-      default:
-        break;
+  for(int i = 0; i < ROWS; i++) {
+    for (int j = 0; j < COLS; j++) {
+      game_info->field[i][j] = ' ';
     }
   }
 
+  for(int i = 0; i < ROWS; i++) {
+    for(int j = 0; j < COLS; j++) {
+      if(i == 0 || i == ROWS - 1) {
+        game_info->field[i][j] = 'X';
+      }
+      if(j == 0 || j == COLS - 1) {
+        game_info->field[i][j] = 'X';
+      }
+    }
+  }
+
+  game_info->score = 0;
+  game_info->high_score = 0;
+  game_info->level = 0;
+  game_info->speed = 0;
 }
