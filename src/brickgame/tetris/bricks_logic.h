@@ -47,4 +47,4 @@ int allocate_memory_fields(GameInfo_t *game_info);
 void free_fields(GameInfo_t *game_info);
 
 // print funcs
-void print_game(GameInfo_t game_info);
+void print_game(GameInfo_t *game_info);

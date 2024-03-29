@@ -7,4 +7,4 @@
 
 #endif  // BRICKGAME_SRC_GUI_SLI_GUI_H_
 
-void print_game(GameInfo_t game_info);
+void print_game(GameInfo_t *game_info);
