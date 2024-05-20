@@ -7,7 +7,8 @@
 ## Tetris (Ncurses + C + FSM)
 
 Final-tetris-version-terminal Realese
-Создан полностью рабочий тетрис с терминальным фронтендом.
+Создан полностью рабочий тетрис с терминальным фронтендом. \
+Backend: https://github.com/AndrewSviatih/brickgame/tree/main/src/brickgame/tetris
 
 ## Brick Snake (C++ + QT Desktop (with integration Tetris in C on Desktop QT))
 
