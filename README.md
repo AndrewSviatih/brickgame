@@ -8,7 +8,7 @@
 
 Final-tetris-version-terminal Realese
 Создан полностью рабочий тетрис с терминальным фронтендом. \
-Backend: https://github.com/AndrewSviatih/brickgame/tree/main/src/brickgame/tetris
+Backend: https://github.com/AndrewSviatih/brickgame/tree/main/src/brickgame/tetris \
 Commit: https://github.com/AndrewSviatih/brickgame/commit/1040d6940c198f7dc733edad384dffa53158273d
 
 ## Brick Snake (C++ + QT Desktop (with integration Tetris in C on Desktop QT))
